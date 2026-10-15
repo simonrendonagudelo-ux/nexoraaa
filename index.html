@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEXORA | Innovación y Contenido Digital - Anserma, Caldas</title>
+  <meta name="description" content="NEXORA es una agencia de vanguardia digital basada en Anserma, Caldas. Especialistas en desarrollo web, modelado y renders 3D en Blender, y branding e identidad visual con Affinity y Canva.">
+  <meta name="keywords" content="NEXORA, Agencia Digital Anserma, Desarrollo Web Caldas, Modelado 3D Blender, Renders Fotorrealistas, Branding, Affinity Designer, Canva Pro, Contenido Digital Colombia">
+  <meta name="author" content="NEXORA">
+  
+  <!-- Open Graph / Meta Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NEXORA | Innovación y Contenido Digital">
+  <meta property="og:description" content="Agencia boutique de contenido digital en Anserma, Caldas. Desarrollo Web, Renders 3D en Blender e Identidad Visual.">
+  <meta property="og:image" content="banner.jpg">
+  <meta property="theme-color" content="#030712">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="logo-nexora.jpg">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Ambient Cyber Canvas (High-Tech Particles Background) -->
+  <canvas id="cyber-canvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0;"></canvas>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR (Fixed + Dark Glassmorphism)
+       ========================================================================= -->
+  <header class="site-navbar" id="navbar">
+    <div class="container navbar-container">
+      
+      <!-- Brand & Logo -->
+      <a href="#inicio" class="nav-brand" aria-label="NEXORA Inicio">
+        <div class="brand-logo-frame">
+          <img src="logo-nexora.jpg" alt="Logo NEXORA - Agencia Digital" class="brand-logo-img">
+        </div>
+        <div class="brand-info">
+          <span class="brand-name">NEX<span>ORA</span></span>
+          <span class="brand-location">Anserma • Caldas</span>
+        </div>
+      </a>
+
+      <!-- Desktop Smooth-Scroll Menu Links -->
+      <nav aria-label="Navegación principal">
+        <ul class="nav-menu">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#quienes-somos" class="nav-link">Quiénes Somos</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav CTA & Mobile Hamburger -->
+      <div class="nav-actions">
+        <a href="https://wa.me/573235407807?text=Hola%20NEXORA,%20deseo%20cotizar%20un%20proyecto%20digital." target="_blank" rel="noopener noreferrer" class="nav-cta-btn">
+          <i class="fab fa-whatsapp"></i>
+          <span>Cotizar</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-nav-links">
+      <li><a href="#inicio" class="mobile-nav-link active">Inicio</a></li>
+      <li><a href="#quienes-somos" class="mobile-nav-link">Quiénes Somos</a></li>
+      <li><a href="#servicios" class="mobile-nav-link">Servicios</a></li>
+      <li><a href="#contacto" class="mobile-nav-link">Contacto</a></li>
+    </ul>
+    <a href="https://wa.me/573235407807?text=Hola%20NEXORA,%20deseo%20cotizar%20un%20proyecto%20digital." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-glow" style="width: 100%; text-align: center;">
+      <i class="fab fa-whatsapp"></i>
+      <span>Contactar por WhatsApp</span>
+    </a>
+  </div>
+
+  <main>
+    <!-- =========================================================================
+         2. HERO SECTION
+         Full-width container featuring banner.jpg as moody background with dark overlay,
+         large title 'INNOVACIÓN Y CONTENIDO DIGITAL', subtitle, and glowing cyber button.
+         ========================================================================= -->
+    <section class="hero-section" id="inicio">
+      
+      <!-- Moody Background Banner & Overlays -->
+      <div class="hero-bg-container">
+        <img src="banner.jpg" alt="Fondo Tecnológico NEXORA" class="hero-bg-image">
+        <div class="hero-overlay"></div>
+        <div class="hero-cyber-grid"></div>
+        <div class="hero-radial-glow"></div>
+      </div>
+
+      <div class="container hero-content">
+        
+        <!-- Cyber Tag / Origin Badge -->
+        <div class="cyber-tag reveal-on-scroll">
+          <span class="dot"></span>
+          <span>AGENCIA DIGITAL • ANSERMA, CALDAS, COLOMBIA</span>
+        </div>
+
+        <!-- Large Hero Title -->
+        <h1 class="hero-title reveal-on-scroll">
+          <span class="title-accent">INNOVACIÓN Y</span><br>
+          <span>CONTENIDO DIGITAL</span>
+        </h1>
+
+        <!-- Subtitle introducing NEXORA's high-performance digital solutions -->
+        <p class="hero-subtitle reveal-on-scroll">
+          Impulsamos el futuro digital de marcas líderes desde <strong>Anserma, Caldas</strong>. Diseñamos soluciones digitales de alto rendimiento: ecosistemas web de vanguardia, producción 3D fotorrealista e identidades de marca con impacto cinematográfico.
+        </p>
+
+        <!-- Call to Action Buttons -->
+        <div class="hero-actions reveal-on-scroll">
+          <!-- Glowing Cyber Button reading 'Explorar Servicios' -->
+          <a href="#servicios" class="btn-cyber-primary">
+            <span>Explorar Servicios</span>
+            <i class="fas fa-arrow-down"></i>
+          </a>
+
+          <!-- Direct WhatsApp Button -->
+          <a href="https://wa.me/573235407807?text=Hola%20NEXORA,%20quiero%20conocer%20m%C3%A1s%20sobre%20sus%20servicios." target="_blank" rel="noopener noreferrer" class="btn-cyber-secondary">
+            <i class="fab fa-whatsapp" style="color: var(--cyber-whatsapp); font-size: 1.15rem;"></i>
+            <span>Hablar con un Experto</span>
+          </a>
+        </div>
+
+        <!-- Hero Stats / Credibility Indicators -->
+        <div class="hero-stats-bar reveal-on-scroll">
+          <div class="hero-stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Web Responsive & Rápida</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="stat-number">3D 4K</span>
+            <span class="stat-label">Renders en Blender</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="stat-number">PRO</span>
+            <span class="stat-label">Branding con Affinity</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="stat-number">+57</span>
+            <span class="stat-label">Anserma al Mundo</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Subtle Cyber Scroll Down Indicator -->
+      <a href="#quienes-somos" class="scroll-indicator" aria-label="Desplazarse hacia Quiénes Somos">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>SCROLL</span>
+      </a>
+
+    </section>
+
+
+    <!-- =========================================================================
+         3. ABOUT US SECTION ('Quiénes Somos')
+         Two-column layout. One side: mockup-oficina.jpg with subtle glowing borders.
+         Other side: professional institutional text describing NEXORA.
+         ========================================================================= -->
+    <section class="section about-section" id="quienes-somos">
+      <div class="container">
+        
+        <div class="about-grid">
+          
+          <!-- Column 1: Workspace Mockup with Glowing Borders & HUD Brackets -->
+          <div class="about-visual reveal-on-scroll">
+            <div class="about-image-wrapper">
+              
+              <!-- HUD Cyber Bracket Accents -->
+              <span class="hud-corner hud-corner-tl"></span>
+              <span class="hud-corner hud-corner-tr"></span>
+              <span class="hud-corner hud-corner-bl"></span>
+              <span class="hud-corner hud-corner-br"></span>
+
+              <!-- Mockup Image -->
+              <img src="mockup-oficina.jpg" alt="Espacio de trabajo y tecnología NEXORA" class="about-image">
+
+              <!-- Floating Cyber Badge -->
+              <div class="about-badge-floating">
+                <div class="about-badge-icon">
+                  <i class="fas fa-microchip"></i>
+                </div>
+                <div class="about-badge-text">
+                  <span class="about-badge-title">ESTACIÓN DE INNOVACIÓN</span>
+                  <span class="about-badge-sub">NEXORA LABS • ANSERMA</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Column 2: Professional Institutional Text -->
+          <div class="about-text-content reveal-on-scroll">
+            
+            <div class="cyber-tag">
+              <span class="dot"></span>
+              <span>// 01. QUIÉNES SOMOS</span>
+            </div>
+
+            <h2 class="section-title">
+              CREATIVIDAD DIGITAL SIN LÍMITES <span class="highlight-cyan">DESDE EL CORAZÓN DE CALDAS</span>
+            </h2>
+
+            <p class="about-lead">
+              En <strong>NEXORA</strong> combinamos visión tecnológica, rigor artístico y pensamiento estratégico para concebir contenido digital que destaca en el panorama global.
+            </p>
+
+            <p class="about-paragraph">
+              Nacida y establecida en <strong>Anserma, Caldas</strong>, nuestra agencia boutique desafía los estándares convencionales. Creemos que la alta tecnología y el diseño de nivel internacional no conocen fronteras geográficas: creamos productos digitales de clase mundial desde el Paisaje Cultural Cafetero.
+            </p>
+
+            <p class="about-paragraph">
+              Nos especializamos en tres pilares sinérgicos de alto impacto: <strong>desarrollo y maquetación web</strong> de máximo rendimiento, <strong>modelado y renderizado 3D</strong> hiperrealista utilizando Blender, e <strong>identidad visual y branding</strong> estratégico con herramientas de precisión como Affinity Suite y Canva Pro.
+            </p>
+
+            <!-- Value Pillars -->
+            <div class="about-pillars">
+              <div class="about-pillar-item">
+                <i class="fas fa-bolt pillar-icon"></i>
+                <div>
+                  <h4 class="pillar-title">Rendimiento y Precisión</h4>
+                  <p class="pillar-desc">Código limpio, tiempos de carga milimétricos y arquitecturas escalables preparadas para el futuro.</p>
+                </div>
+              </div>
+
+              <div class="about-pillar-item">
+                <i class="fas fa-cube pillar-icon"></i>
+                <div>
+                  <h4 class="pillar-title">Inmersión Tridimensional</h4>
+                  <p class="pillar-desc">Modelado en Blender con iluminación volumétrica y shaders cinematográficos que transmiten valor real.</p>
+                </div>
+              </div>
+
+              <div class="about-pillar-item">
+                <i class="fas fa-compass-drafting pillar-icon"></i>
+                <div>
+                  <h4 class="pillar-title">Identidades Coherentes y Memorables</h4>
+                  <p class="pillar-desc">Sistemas gráficos profesionales que dotan de autoridad, personalidad y sofisticación a tu marca.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- About CTAs -->
+            <div class="about-cta-row">
+              <a href="#contacto" class="btn-cyber-primary">
+                <span>Iniciar Conversación</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+              <a href="https://wa.me/573235407807?text=Hola%20NEXORA,%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20sobre%20su%20equipo." target="_blank" rel="noopener noreferrer" class="btn-cyber-secondary">
+                <i class="fab fa-whatsapp" style="color: var(--cyber-whatsapp);"></i>
+                <span>+57 323 540 7807</span>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         4. SERVICES GRID SECTION ('Nuestros Servicios')
+         3-column card grid using produccion-estudio.jpg and mockup-oficina.jpg across cards.
+         Cyber-style dark background highlighting:
+         (1) Desarrollo y Maquetación Web
+         (2) Modelado y Renders 3D en Blender
+         (3) Identidad Visual & Branding con Affinity y Canva
+         ========================================================================= -->
+    <section class="section services-section" id="servicios">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal-on-scroll">
+          <div class="cyber-tag">
+            <span class="dot"></span>
+            <span>// 02. NUESTROS SERVICIOS</span>
+          </div>
+          <h2 class="section-title">
+            SOLUCIONES DIGITALES DE <span class="highlight-cyan">ALTO RENDIMIENTO</span>
+          </h2>
+          <p class="section-subtitle">
+            Diseñadas con precisión arquitectónica y potencia visual para posicionar a tu negocio a la vanguardia de la industria.
+          </p>
+        </div>
+
+        <!-- 3-Column Cyber Cards Grid -->
+        <div class="services-grid">
+          
+          <!-- Card 1: Desarrollo y Maquetación Web -->
+          <article class="service-card reveal-on-scroll">
+            <div class="service-visual-box">
+              <img src="mockup-oficina.jpg" alt="Desarrollo y Maquetación Web - NEXORA" class="service-img">
+              <div class="service-visual-overlay"></div>
+              <span class="service-id-badge">SRV // 01</span>
+              <div class="service-icon-floating">
+                <i class="fas fa-code"></i>
+              </div>
+            </div>
+
+            <div class="service-body">
+              <h3 class="service-title">Desarrollo y Maquetación Web</h3>
+              <p class="service-description">
+                Diseñamos y programamos sitios web corporativos, landing pages de alta conversión y portales interactivos. Enfoque 100% responsivo, optimizado para posicionamiento SEO en Google, velocidad de carga instantánea y estándares modernos de seguridad.
+              </p>
+
+              <div class="service-tech-tags">
+                <span class="tech-tag primary">HTML5 & CSS3</span>
+                <span class="tech-tag primary">JavaScript Moderno</span>
+                <span class="tech-tag">Responsive UI/UX</span>
+                <span class="tech-tag">Optimización SEO</span>
+                <span class="tech-tag">Glassmorphism</span>
+              </div>
+
+              <div class="service-footer">
+                <a href="https://wa.me/573235407807?text=Hola%20NEXORA,%20quiero%20cotizar%20un%20servicio%20de%20Desarrollo%20y%20Maquetaci%C3%B3n%20Web." target="_blank" rel="noopener noreferrer" class="service-cta-link">
+                  <span>Cotizar Proyecto Web</span>
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Modelado y Renders 3D en Blender -->
+          <article class="service-card reveal-on-scroll">
+            <div class="service-visual-box">
+              <img src="produccion-estudio.jpg" alt="Modelado y Renders 3D en Blender - NEXORA" class="service-img">
+              <div class="service-visual-overlay"></div>
+              <span class="service-id-badge">SRV // 02</span>
+              <div class="service-icon-floating">
+                <i class="fas fa-cubes"></i>
+              </div>
+            </div>
+
+            <div class="service-body">
+              <h3 class="service-title">Modelado y Renders 3D en Blender</h3>
+              <p class="service-description">
+                Visualización 3D fotorrealista y cinemática desarrollada en Blender. Modelado tridimensional de producto, animación publicitaria, simulación de materiales PBR, iluminación volumétrica y renders en ultra alta definición 4K que elevan el valor percibido de tus productos.
+              </p>
+
+              <div class="service-tech-tags">
+                <span class="tech-tag primary">Blender 3D</span>
+                <span class="tech-tag primary">Motores Cycles / Eevee</span>
+                <span class="tech-tag">Materiales PBR</span>
+                <span class="tech-tag">Animación Cinemática</span>
+                <span class="tech-tag">Renders 4K</span>
+              </div>
+
+              <div class="service-footer">
+                <a href="https://wa.me/573235407807?text=Hola%20NEXORA,%20me%20interesa%20el%20servicio%20de%20Modelado%20y%20Renders%203D%20en%20Blender." target="_blank" rel="noopener noreferrer" class="service-cta-link">
+                  <span>Cotizar Render 3D</span>
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Identidad Visual & Branding con Affinity y Canva -->
+          <article class="service-card reveal-on-scroll">
+            <div class="service-visual-box">
+              <img src="produccion-estudio.jpg" alt="Identidad Visual y Branding con Affinity y Canva - NEXORA" class="service-img">
+              <div class="service-visual-overlay"></div>
+              <span class="service-id-badge">SRV // 03</span>
+              <div class="service-icon-floating">
+                <i class="fas fa-bezier-curve"></i>
+              </div>
+            </div>
+
+            <div class="service-body">
+              <h3 class="service-title">Identidad Visual & Branding con Affinity y Canva</h3>
+              <p class="service-description">
+                Creación integral de sistemas de marca perdurables. Diseñamos logotipos vectoriales de alta precisión con Affinity Designer & Photo, junto con plantillas dinámicas y kits estratégicos para redes en Canva Pro para una gestión visual ágil, coherente e impactante.
+              </p>
+
+              <div class="service-tech-tags">
+                <span class="tech-tag primary">Affinity Designer</span>
+                <span class="tech-tag primary">Affinity Photo</span>
+                <span class="tech-tag primary">Canva Pro</span>
+                <span class="tech-tag">Manual de Marca</span>
+                <span class="tech-tag">Social Media Kits</span>
+              </div>
+
+              <div class="service-footer">
+                <a href="https://wa.me/573235407807?text=Hola%20NEXORA,%20deseo%20cotizar%20Identidad%20Visual%20y%20Branding%20con%20Affinity%20y%20Canva." target="_blank" rel="noopener noreferrer" class="service-cta-link">
+                  <span>Cotizar Branding</span>
+                  <i class="fas fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         5. METHODOLOGY / WORKFLOW SECTION
+         ========================================================================= -->
+    <section class="workflow-section">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="cyber-tag">
+            <span class="dot"></span>
+            <span>// 03. METODOLOGÍA NEXORA</span>
+          </div>
+          <h2 class="section-title">NUESTRO PROCESO <span class="highlight-cyan">DE VANGUARDIA</span></h2>
+          <p class="section-subtitle">Garantizamos resultados impecables mediante un flujo de trabajo transparente y ágil.</p>
+        </div>
+
+        <div class="workflow-grid">
+          
+          <div class="workflow-card reveal-on-scroll">
+            <div class="workflow-step">01.</div>
+            <h3 class="workflow-title">Estrategia & Briefing</h3>
+            <p class="workflow-desc">Analizamos a fondo tu modelo de negocio, objetivos comerciales y competencia para trazar una hoja de ruta técnica y estética sin fisuras.</p>
+          </div>
+
+          <div class="workflow-card reveal-on-scroll">
+            <div class="workflow-step">02.</div>
+            <h3 class="workflow-title">Producción & Modelado</h3>
+            <p class="workflow-desc">Ejecutamos el código, esculpimos en Blender e ilustramos en Affinity, realizando iteraciones continuas y revisiones de alta fidelidad.</p>
+          </div>
+
+          <div class="workflow-card reveal-on-scroll">
+            <div class="workflow-step">03.</div>
+            <h3 class="workflow-title">Lanzamiento & Impacto</h3>
+            <p class="workflow-desc">Desplegamos tu plataforma web o entregamos los renders y piezas de identidad en máxima resolución, listos para conquistar a tu audiencia.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================================================================
+         6. CALL TO ACTION & CONTACT SECTION ('Contacto')
+         Prominent section encouraging visitors to take action, featuring direct WhatsApp button
+         (+57 323 540 7807) with WhatsApp icon.
+         ========================================================================= -->
+    <section class="section cta-section" id="contacto">
+      <div class="container">
+        
+        <div class="cta-box-container reveal-on-scroll">
+          <div class="cta-grid">
+            
+            <!-- Left Info Column with Prominent WhatsApp Contact -->
+            <div class="cta-info">
+              
+              <div class="cyber-tag">
+                <span class="dot"></span>
+                <span>CONTACTO DIRECTO // ANSERMA, CALDAS</span>
+              </div>
+
+              <h2 class="cta-heading">
+                ¿LISTO PARA <span class="highlight-cyan">TRANSFORMAR TU MARCA</span>?
+              </h2>
+
+              <p class="cta-description">
+                Conversemos directamente hoy mismo. Estamos en Anserma, Caldas, listos para desarrollar tu proyecto con los más altos estándares tecnológicos y creativos del mercado.
+              </p>
+
+              <!-- Prominent WhatsApp Action Button -->
+              <div class="cta-whatsapp-block">
+                <a href="https://wa.me/573235407807?text=Hola%20NEXORA,%20deseo%20iniciar%20un%20proyecto%20con%20ustedes." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-glow">
+                  <i class="fab fa-whatsapp"></i>
+                  <span>WhatsApp: +57 323 540 7807</span>
+                </a>
+              </div>
+
+              <!-- Contact Quick Details -->
+              <div class="cta-contact-details">
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                  </div>
+                  <div>
+                    <strong style="color: #fff; display: block;">Ubicación:</strong>
+                    <span>Anserma, Caldas, Colombia</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="fas fa-phone-alt"></i>
+                  </div>
+                  <div>
+                    <strong style="color: #fff; display: block;">Línea Directa / WhatsApp:</strong>
+                    <span>+57 323 540 7807</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  <div>
+                    <strong style="color: #fff; display: block;">Atención y Respuesta:</strong>
+                    <span>Lunes a Sábado: 8:00 AM - 7:00 PM (Respuesta rápida)</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Interactive Form Column -->
+            <div class="cta-form-card">
+              <h3 class="form-title">Envíanos un Mensaje</h3>
+              <p class="form-subtitle">Rellena el formulario y te contactaremos en minutos vía WhatsApp.</p>
+
+              <form id="nexora-contact-form">
+                
+                <div class="form-group">
+                  <label for="client-name" class="form-label">Tu Nombre o Empresa *</label>
+                  <input type="text" id="client-name" class="form-input" placeholder="Ej: Juan Pérez o Mi Empresa SAS" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="client-phone" class="form-label">Número de WhatsApp / Teléfono</label>
+                  <input type="tel" id="client-phone" class="form-input" placeholder="Ej: +57 323 540 7807">
+                </div>
+
+                <div class="form-group">
+                  <label for="client-service" class="form-label">Servicio de Interés</label>
+                  <select id="client-service" class="form-select">
+                    <option value="Desarrollo y Maquetación Web">Desarrollo y Maquetación Web</option>
+                    <option value="Modelado y Renders 3D en Blender">Modelado y Renders 3D en Blender</option>
+                    <option value="Identidad Visual & Branding con Affinity y Canva">Identidad Visual & Branding con Affinity y Canva</option>
+                    <option value="Solución Integral (Web + 3D + Branding)">Solución Integral (Web + 3D + Branding)</option>
+                    <option value="Otra Consulta">Otra Consulta</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="client-message" class="form-label">Detalles del Proyecto</label>
+                  <textarea id="client-message" class="form-textarea" placeholder="Cuéntanos brevemente sobre tu idea, tiempos o requerimientos especiales..."></textarea>
+                </div>
+
+                <button type="submit" class="form-submit-btn">
+                  <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i>
+                  <span>Enviar Consulta vía WhatsApp</span>
+                </button>
+
+              </form>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <!-- =========================================================================
+       7. FOOTER
+       Professional footer with copyright for NEXORA, Anserma, Caldas, 2026.
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <!-- Top Grid -->
+      <div class="footer-top-grid">
+        
+        <!-- Agency Brand Column -->
+        <div class="footer-brand-col">
+          <div class="nav-brand" style="margin-bottom: 8px;">
+            <div class="brand-logo-frame">
+              <img src="logo-nexora.jpg" alt="Logo NEXORA" class="brand-logo-img">
+            </div>
+            <div class="brand-info">
+              <span class="brand-name">NEX<span>ORA</span></span>
+              <span class="brand-location">Agencia Digital</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Agencia boutique pionera en soluciones digitales de alto impacto. Transformamos negocios a través del desarrollo web, visualización 3D y diseño de marca estratégico.
+          </p>
+          <div class="footer-location-badge">
+            <i class="fas fa-map-pin"></i>
+            <span>Anserma, Caldas, Colombia</span>
+          </div>
+        </div>
+
+        <!-- Links Column -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">Navegación</h4>
+          <ul class="footer-links-list">
+            <li><a href="#inicio" class="footer-link"><i class="fas fa-angle-right"></i> Inicio</a></li>
+            <li><a href="#quienes-somos" class="footer-link"><i class="fas fa-angle-right"></i> Quiénes Somos</a></li>
+            <li><a href="#servicios" class="footer-link"><i class="fas fa-angle-right"></i> Servicios</a></li>
+            <li><a href="#contacto" class="footer-link"><i class="fas fa-angle-right"></i> Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Column -->
+        <div class="footer-services-col">
+          <h4 class="footer-col-title">Servicios</h4>
+          <ul class="footer-links-list">
+            <li><a href="#servicios" class="footer-link"><i class="fas fa-angle-right"></i> Desarrollo Web</a></li>
+            <li><a href="#servicios" class="footer-link"><i class="fas fa-angle-right"></i> Modelado 3D Blender</a></li>
+            <li><a href="#servicios" class="footer-link"><i class="fas fa-angle-right"></i> Branding & Affinity</a></li>
+            <li><a href="#servicios" class="footer-link"><i class="fas fa-angle-right"></i> Producción Visual</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Column -->
+        <div class="footer-contact-col">
+          <h4 class="footer-col-title">Contacto Rápido</h4>
+          <div class="footer-contact-items">
+            <div class="footer-contact-row">
+              <i class="fab fa-whatsapp"></i>
+              <span>+57 323 540 7807</span>
+            </div>
+            <div class="footer-contact-row">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Anserma, Caldas - Colombia</span>
+            </div>
+            <div class="footer-contact-row">
+              <i class="fas fa-clock"></i>
+              <span>Lunes a Sábado: 8am - 7pm</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 <strong>NEXORA</strong>. Anserma, Caldas. Todos los derechos reservados.
+        </p>
+
+        <span class="footer-badge-tag">
+          <i class="fas fa-bolt" style="margin-right: 5px;"></i> Calidad & Innovación Digital
+        </span>
+
+        <button class="back-to-top" id="back-to-top-btn" aria-label="Volver al inicio">
+          <i class="fas fa-chevron-up"></i>
+        </button>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       8. FLOATING WHATSAPP PILL
+       Direct instant access to WhatsApp: +57 323 540 7807
+       ========================================================================= -->
+  <a href="https://wa.me/573235407807?text=Hola%20NEXORA,%20me%20comunico%20desde%20el%20sitio%20web%20para%20solicitar%20informaci%C3%B3n." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Escribir por WhatsApp a NEXORA">
+    <div class="floating-whatsapp-pulse"></div>
+    <i class="fab fa-whatsapp"></i>
+    <span class="floating-whatsapp-text">Chatea con nosotros</span>
+  </a>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
